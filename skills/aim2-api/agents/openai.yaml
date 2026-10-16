@@ -1,0 +1,4 @@
+interface:
+  display_name: "AIM2: подключение"
+  short_description: "Подключение к AIM2 API и выбор рабочего сценария"
+  default_prompt: "Используй $aim2-api, чтобы подключиться к выбранной установке AIM2 и проверить учётную запись."

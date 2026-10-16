@@ -1,0 +1,4 @@
+interface:
+  display_name: "AIM2: эксперименты"
+  short_description: "Определения, запуски и прогресс экспериментов AIM2"
+  default_prompt: "Используй $aim2-api-experiments, чтобы запустить сравнение выбранных вариантов на моей корзине."

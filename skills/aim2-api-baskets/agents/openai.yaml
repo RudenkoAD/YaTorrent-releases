@@ -1,0 +1,4 @@
+interface:
+  display_name: "AIM2: корзины"
+  short_description: "Создание, изменение и экспорт корзин через API"
+  default_prompt: "Используй $aim2-api-baskets, чтобы создать корзину из моего списка запросов и проверить её содержимое."

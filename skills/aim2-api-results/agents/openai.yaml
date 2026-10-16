@@ -1,0 +1,4 @@
+interface:
+  display_name: "AIM2: результаты"
+  short_description: "Выгрузка SERPset, органических URL и HTML из AIM2"
+  default_prompt: "Используй $aim2-api-results, чтобы скачать результаты выбранного запуска и указать ошибки и неполные выходы."
