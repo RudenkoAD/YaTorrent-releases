@@ -1,12 +1,14 @@
 # YaTorrent releases
 
-Public installers for YaTorrent, the AIM2 desktop worker for macOS 13+ on Apple Silicon.
+Public installers for YaTorrent, the AIM2 desktop worker for macOS on Apple Silicon.
 
-Download the latest DMG from [Releases](https://github.com/RudenkoAD/YaTorrent-releases/releases/latest), copy YaTorrent to Applications, and import the `.aim2` connection profile supplied by your administrator. Profiles and credentials are not distributed here.
+Download the latest DMG from [Releases](https://github.com/RudenkoAD/YaTorrent-releases/releases/latest) and copy YaTorrent to Applications.
+
+Version **1.1.0** includes the default AIM2 Y.Deploy broker and S3 connection settings; importing a configuration file is optional. Before starting the worker, install the `ya` CLI with `ya vault`, configure an SSH agent such as Skotty, and obtain read access to the configured YAV secret. The worker retrieves its credentials from YAV at startup; secret values are not embedded in the installer. An administrator-supplied `.aim2` profile can override the defaults, and existing imported profiles are preserved during updates. Private profiles and credentials are not distributed here.
 
 From version 0.2.8 onward, updates are available inside **Worker → Обновление приложения**. Downloading an update does not stop work. Stop the worker before installing and relaunching the app.
 
-The app uses an ad-hoc signature and is not Apple-notarized. macOS may require **System Settings → Privacy & Security → Open Anyway** for a trusted first installation, and may ask again for Keychain access after an update. Do not disable Gatekeeper.
+Version **1.1.0** uses the persistent self-signed release certificate and is not Apple-notarized. macOS may require **System Settings → Privacy & Security → Open Anyway** for a trusted first installation, and may ask again for Keychain access after an update. Do not disable Gatekeeper.
 
 Each release includes `SHA256SUMS.txt`. The updater also checks the GitHub asset digest, archive structure, bundle identity, architecture, and signature integrity.
 
